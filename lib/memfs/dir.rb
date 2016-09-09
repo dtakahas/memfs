@@ -2,6 +2,11 @@ require 'memfs/filesystem_access'
 
 module MemFs
   class Dir
+    class Tmpname
+      def self.tmpdir
+        '/tmp'
+      end
+    end
     extend FilesystemAccess
     include Enumerable
     include FilesystemAccess
