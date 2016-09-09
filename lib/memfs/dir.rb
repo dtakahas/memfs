@@ -7,7 +7,7 @@ module MemFs
         '/tmp'
       end
 
-      def create(basename, tmpdir=nil, max_try: nil, **opts)
+      def self.create(basename, tmpdir=nil, max_try: nil, **opts)
         if $SAFE > 0 and tmpdir.tainted?
           tmpdir = '/tmp'
         else
