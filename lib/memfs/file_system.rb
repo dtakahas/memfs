@@ -43,7 +43,7 @@ module MemFs
     end
 
     def dirname(path)
-      File.dirname(path)
+      File.dirname(Pathname.new(path))
     end
 
     def entries(path)

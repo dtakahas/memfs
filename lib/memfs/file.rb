@@ -36,9 +36,7 @@ module MemFs
                    :fnmatch,
                    :join,
                    :path,
-                   :split,
-                   :to_path
-
+                   :split
     [
       :blockdev?,
       :chardev?,
